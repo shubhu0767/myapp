@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './components/Home';
+import Navbar from './components/Navbar';
 import DataChild from './components/DataChild';
 import {Routes, Route } from 'react-router-dom';
 
@@ -8,8 +8,9 @@ import {Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Navbar />
       <Routes>
+          <Route path="/" element={<DataChild />} />        
           <Route path="/:id" element={<DataChild />} />        
       </Routes>
     </div>

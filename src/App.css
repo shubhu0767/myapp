@@ -1,13 +1,9 @@
-.menu {
-    display: flex;
-    justify-content: end;
-    column-gap: 2rem;
-    list-style: none;
-    text-decoration: none;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 h1 {
     font-family: 'Roboto', sans-serif;
 }
@@ -20,30 +16,34 @@ a{
     text-decoration: none;
     color: black;
 }
+
 .container{
     max-width: 80%;
     margin: auto;
 }
 
 .menu {
+    margin: 2rem 0;
     display: flex;
     justify-content: end;
     column-gap: 2rem;
     list-style-type: none;
 }
 
-body h1 {
-    cursor: pointer;
+.menu li{
+    font-size: xx-small;
 }
 
+.menu-selected{
+    color: red;
+}
 
 .aboutme-text{
     width: 60vw;
     line-height: 1.5rem;
 }
 
-.icons .fa {
-    font-size: 2rem;
+.icons {
     margin: 3rem 0;
 }
 

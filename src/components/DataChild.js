@@ -7,21 +7,19 @@ import Portfolio from './Portfolio';
 
 const DataChild = () => {
     const {id} = useParams();
-
-    if (id === 'about') {
+    if(id === 'about') {
       return <About />
     }
-    if (id === 'contact') {
+    if(id === 'contact') {
       return <Contact />
     }
-    if (id === 'portfolio') {
+    if(id === 'portfolio') {
       return <Portfolio />
     }
+
   return (
     <>
-    <div>
-      Welcome to my page
-    </div>
+      <h1>Hello Welcome to my page.</h1>
     </>
   )
 }

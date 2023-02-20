@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
+    <div className='container'>
         <p>E-mail:- shubhamtambwe2018@gmail.com</p>
         <div className="icons">
           <a href="https://www.linkedin.com/in/shubham-tambwe-a53725204/">LinkedIn</a>
