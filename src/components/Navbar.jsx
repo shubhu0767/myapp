@@ -1,18 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import '../App.css';
 
-
-const changeColor = (e) => {
-   e.target.classList = "selected";
+const changeColor = ({isActive}) => {
+  return {
+    color: isActive ? 'red' : ''
+  }
 }
+
 const Navbar = () => {
   return (
     <>
     <div className='container'>
-        <ul className='menu' onClick={changeColor}>
-            <li><Link to="/about"><h1 onClick={changeColor}>About me</h1></Link></li>
-            <li><Link to="/contact"><h1 onClick={changeColor}>Contact me</h1></Link></li>
-            <li><Link to="/portfolio"><h1 onClick={changeColor}>Portfolio</h1></Link></li>
+        <ul className='menu' >
+            <li><NavLink to="/about" style={changeColor}><h1>About Me</h1></NavLink></li>
+            <li><NavLink to="/contact" style={changeColor}><h1>Contact me</h1></NavLink></li>
+            <li><NavLink to="/portfolio" style={changeColor}><h1>Portfolio</h1></NavLink></li>
         </ul>
     </div>
     </>

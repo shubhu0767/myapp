@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import DataChild from './components/DataChild';
 import {Routes, Route } from 'react-router-dom';
+import About from './components/About';
+import DataChild from './components/DataChild';
 
 
 
@@ -10,8 +11,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-          <Route path="/" element={<DataChild />} />        
-          <Route path="/:id" element={<DataChild />} />        
+          <Route path="/" element={<About />} />        
+          <Route path="/:id" element={<DataChild />} />     
       </Routes>
     </div>
   );
